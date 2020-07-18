@@ -15,8 +15,9 @@ public class Utils {
 		System.setProperty("webdriver.chrome.driver", 
 				System.getProperty("user.dir")+File.separator+"chromedriver.exe");
 		driver= new ChromeDriver();
-		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		
 		implicitWait();
 		return driver;
 	}
